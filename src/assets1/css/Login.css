@@ -1,0 +1,119 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background: url('../img/backg.jpg') no-repeat center center fixed; */
+    background: url('../imges/bgimg.webp');
+    background-size: cover;
+
+}
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-shadow: inset;
+
+
+}
+
+.logform {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: solid 1px rgb(75, 110, 237);
+    border-radius: 7px;
+}
+
+.logform, h3 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.logform, h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.colar {
+    color: #ffffff;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+
+}
+
+.input-container input {
+    width: 350px;
+    padding: 10px;
+    padding-left: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.input-container .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #aaa;
+    font-size: 14px;
+    margin-top: -14px;
+}
+
+
+button {
+    background-color: #0063B8;
+    color: white;
+    border: none;
+    border: radius 8px !important;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+
+.mcdlogo {
+    color: #373184;
+    margin-top: -4px;
+    font-size: 25px;
+
+
+}

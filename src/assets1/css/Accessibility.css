@@ -1,0 +1,24 @@
+.high-contrast {
+    background-color: black;
+    color: white;
+  }
+  
+  .high-contrast a {
+    color: yellow;
+  }
+  
+  .high-contrast button {
+    background-color: yellow;
+    color: black;
+  }
+  
+  .high-contrast .dropdown-menu {
+    background-color: black;
+    color: white;
+  }
+  
+  .high-contrast .dropdown-item:hover {
+    background-color: white;
+    color: black;
+  }
+  

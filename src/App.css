@@ -1,20 +1,69 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.routmar {
+  margin-left: 136px;
 }
 
 
-.reports,
-.contact,
-.events,
-.support {
-    display: flex;
-    margin-left: 260px;
-    font-size: 1rem;
+/* src/DataTable.css */
+.data-table-cell {
+  white-space: normal;
+  /* Allows text wrapping */
+  word-wrap: break-word;
+  /* Breaks long words */
+  overflow-wrap: break-word;
+  text-align: justify;
+  padding: 15px;
+  /* Ensures long words break */
 }
 
-
-.contain {
-    display: --webkit-box-box;
+/* 
+h1{
+  font-weight: 900;
+  font-size: medium;
+  background-color: antiquewhite;
+  font-size: medium;
+} */
+coll {
+  color: #bbd7ef;
+  background: #6fc7fa;
+  color: #b8d6ee;
 }

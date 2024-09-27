@@ -1,54 +1,147 @@
 
 
 
-
-// import React from 'react';
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import Login from '../src/components/Login';
-// import Dashboard from '../src/components/Dashboard';
-
-// const App = () => {
-//     return (
-//         <Router>
-//             <Routes>
-//                 <Route path="/login" element={<Login />} />
-//                 <Route path="/dashboard" element={<Dashboard />} />
-//                 <Route path="/" element={<Login />} /> {/* Default route */}
-//             </Routes>
-//         </Router>
-//     );
-// };
-
-// export default App;
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import LoginPage from './pages/LoginPage';
+import Dashboard from './pages/Dashboard';
+//import RoutsPage from './layout/RoutsPage';
+//import Home from './pages/Home';
 
 
-// Filename - App.js
-
-import React from 'react'
-//import Login from './pages/Login'
-import AppRouter from './pages/AppRouter'
-//import SidebarSubmenu from './components/SidebarSubmenu'
-//import Footer from './pages/Footer';
-//import Header from './components/Header';
-//import Home from './components/Home';
+import DynamicSidebar from './layout/DynamicSidebar';
+import Header from './layout/Headers'
+import { Row, } from 'react-bootstrap';
+import Master from './pages/Master';
 
 
-export default function App() {
+import CountryList from './components/CommanMaster/CountryList';
+import AccessibilityBar from './layout/AccessibilityBar';
+import CountryDataTable from './components/CommanMaster/CountryDataTable';
+import MasterCountryMstGuid from './pages/MasterCountryMstGuid';
+import CustomDataTable from './components/CommanMaster/CountryDataTable';
 
 
-    return (
-        <div>
-        
-            {/* <Login /> */}
-             <AppRouter />
-            <div className="container">
-                {/* <SidebarSubmenu /> */}
-               
 
-            </div>
+
+
+function App() {
+  return (
+
+    <>
+      <AccessibilityBar />
+      <Header />
+      <>
+
+
+        <Row className='' style={{ marginLeft: '170px', marginRight: '15px', marginTop: '10px' }}>
+          <div>
+          </div>
+          <div>
+
+            <Routes>
+              <Route path="/LoginPage" element={<LoginPage />} />
+              <Route path="/masterCounrtry" element={<MasterCountryMstGuid />} />
+
+
           
+              <Route path="/CountryList" element={<CountryList />} />
+              
+              <Route path="/CustomDataTable" element={<CustomDataTable />} />
 
-        </div>
-    );
+
+
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/master" element={<Master />} />
+              <Route path="/CountryDataTable" element={<CountryDataTable />} />
+
+
+            
+              <Route path="/DynamicSidebar" element={<DynamicSidebar />} />
+
+              CountryMstGuid
+            </Routes>
+          </div>
+        </Row>
+      </>
+    </>
+  );
 }
+
+export default App;
+
+
+
+
+// import React, { useState } from 'react'
+// import './App.css'
+
+// import { Button } from 'react-bootstrap';
+
+
+
+// export default function App() {
+
+
+
+
+
+
+
+//   const purple = 'blue';
+
+//   const [Bg, setBg] = useState(purple);
+
+//   const ChangBg = () => {
+//     // console.log('clicked')
+//   }
+
+//   return (
+//     <>
+//       <div className='App'>
+
+//         <div className='App-header' style={{ backgroundColor: 'Bg' }}>
+
+
+//           <Button onClick={ChangBg}>Clilck me</Button>
+//         </div>
+//       </div>
+//     </>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
